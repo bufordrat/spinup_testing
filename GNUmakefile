@@ -1,3 +1,9 @@
+FORCE_TESTS=false
+export FORCE_TESTS
+
 .PHONY: all
-all: 
-	./dooder.sh
+all: main
+
+.PHONY: main
+main:
+	./build-run-delete.sh $@
